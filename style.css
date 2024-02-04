@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 90vb;
+    width: 100%;
+}
+#navbar{
+   position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(251, 127, 10);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    margin-left: 9px;
+    color:black;
+    display: block;
+    padding: 14px 22px;
+    border-radius: 30px;
+    text-decoration:none;
+}
+
+#navbar ul li a:hover{
+    color: #000;
+  background-color: #fff;
+}
+
+#logo{
+    margin: 2px 20px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 3px 14px;
+}
+
+#navbar button{
+    color: #000;
+    height: 50px;
+    box-sizing: inherit;
+    border-radius: 30px;
+    background-color:#fff;
+
+}
+#navbar button li a{
+    color:black;
+    display: block;
+}
+#navbar ul i{
+    margin-left: 230px;
+}
+#home1{
+    display: flex;
+    flex-direction: column;
+   
+  
+}
+#home1::before{
+    content: "";
+   position:absolute;
+    height: 80%;
+    background: url(Images/pexels-valeria-boltneva-1639562.jpg);
+    width: 100%;
+    background-position: center;
+    z-index: -1;
+     background-size: cover;
+}
+#home1 h1{
+    font-size: 3.9rem;
+    color:rgb(251, 127, 10);
+    margin: 70px;
+}
+#features h2{
+    font-size: 3.5rem;
+    font-weight: 1000;
+    margin: 10px;
+    text-align: center;
+    color:rgb(253, 127, 10);
+}
+.picture{
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.pic1{
+    transition: transform 0.1s ease;
+}
+ .pic1 img{
+    width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: transform 0.1s ease;
+    border-radius: 50%;
+}
+
+.pic1:hover{
+ transform: scale(1.08);
+ border-radius: 500px;
+ 
+}
+.pic1 img h3{
+    text-align: center;
+}
+
+#places h2{
+    font-size: 3.0rem;
+    font-weight: 900;
+    margin: 70px;
+    color:rgb(253, 127, 10);
+}
+.resort{
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.resturants1 .ri-star-fill{
+    color: orange;
+}
+.resturants1 img{
+    width: 300px;
+    height: 200px;
+    transition: 0.1s;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.resturants1 h3{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.resturants1 :hover{
+transform: scale(1.08);
+}
+
+.category{
+display: flex;
+}
+.category h2 h3 li a{
+    display: flex;
+}
+#category button{
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+    background-color: rgb(253, 127, 10);
+    padding: 10px 20px;
+}
+.btn{
+    display: flex;
+    gap: 30px;
+    margin: 50px auto;
+    width: 80%;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#category h3{
+     font-size: 45px;
+     margin: 20px 0px ;
+     color:rgb(253, 127, 10);
+     
+}
+#category{
+    width: 90%;
+    margin: auto;
+}
+.btn button:hover{
+     background-color: #000;
+    transform: scale(1.09);
+}
+.btn1{
+    display: flex;
+    gap: 20px;
+}
+.btn2{
+    display: flex;
+    gap: 20px;
+}
+.btn .btn1 button:active{
+    background-color: black;
+}
+#meals{
+    display: flex;
+}
+.food{
+    display: flex;
+    color: #000;
+    transition: transform 0.5s ease;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.food1 img{
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    margin: 30px auto;
+    transition: 0.1s;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.food1 img:hover{
+    transform: scale(1.09);
+}
+#khana{
+    display: flex;
+}
+.food2{
+    display: flex;
+    color: #000;
+    margin: 10px auto;
+    transition: transform 0.5s ease;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.food3 img{
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.1s;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.food3 img:hover{
+    transform: scale(1.09);
+}
+#khana2{
+    display: flex;
+}
+.food4{
+    display: flex;
+    color: #000;
+    transition: transform 0.5s ease;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.food5 img{
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.1s;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.food5 img:hover{
+    transform: scale(1.09);
+}
+
+footer{
+    width: 100%;
+    height: 40vb;
+    display: flex;
+    padding:  30px 0px;
+    justify-content: space-around;
+    background-color: #000;
+}
+.log{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.log h4{
+    font-size: 35px;
+    color: rgb(253, 127, 10);
+}
+.call1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.call1 h5{
+    color: rgb(253, 127, 10);
+    font-size: 20px;
+
+}
+.call1 a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #616161;
+}
+.log h3{
+    font-size: 35px;
+    color: rgb(253, 127, 10);
+}
+
+.text{
+    display: flex;
+    color: #000;
+    margin: 80px 70px;
+    transition: transform 0.5s ease;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.text1{
+    background-color: #616161;
+    cursor: pointer;
+    transition: 0.1s;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.testimonials{
+    margin: 8rem 0rem;
+}
+.smallcontainer{
+    width: 100%;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex-basis: 25%;
+    min-width: 250px;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin-inline: 1rem;
+    box-shadow: 0px 0px 20px 0px space rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.5s ;
+    
+}
+.col:hover{
+    transform: translateY(-10px);
+}
+.col .rate {
+    padding: 1rem;
+    color: #ff6600;
+}
+.col img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+  border-radius: 50%;
+}
+.col h5{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #555;
+
+}
+.col p{
+    font-size: 1.2rem;
+    color: #555;
+}
+.col .ri-double-quotes-l{
+    font-size: 3rem;
+    color: #ff6600;
+
+}
